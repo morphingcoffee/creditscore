@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularBar"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:cpb_background_progressbar_color="@color/transparent"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_indeterminate_mode="true"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/transparent"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_round_border="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/outer_circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/themed_circular_bar_ring_2dp"
+            app:layout_constraintBottom_toBottomOf="@id/circularBar"
+            app:layout_constraintLeft_toLeftOf="@id/circularBar"
+            app:layout_constraintRight_toRightOf="@id/circularBar"
+            app:layout_constraintTop_toTopOf="@id/circularBar" />
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/score_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="Your credit score is" />
+
+        <TextView
+            android:id="@+id/score_text"
+            style="@style/ThinFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/score_color"
+            android:textSize="100sp"
+            app:layout_constraintBottom_toBottomOf="@id/circularBar"
+            app:layout_constraintLeft_toLeftOf="@id/circularBar"
+            app:layout_constraintRight_toRightOf="@id/circularBar"
+            app:layout_constraintTop_toTopOf="@id/circularBar"
+            tools:text="X" />
+
+        <TextView
+            android:id="@+id/bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/score_text"
+            tools:text="out of Y" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

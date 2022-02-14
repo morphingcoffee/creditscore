@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Credit Score</string>
+    <!--  Credit Score Screen  -->
+    <string name="getting_credit_score">Getting your credit score</string>
+    <string name="your_credit_score_is">Your credit score is</string>
+    <string name="out_of_score_template">out of %1$d</string>
+    <string name="issue_occurred">We\'re having issues</string>
+    <string name="try_again_action">Touch to try again</string>
+    <string name="question_mark">\?</string>
+    <string name="exclamation_mark">!</string>
+    <!--  Errors  -->
+    <string name="error_message_no_internet">Internet unavailable. Please try again.</string>
+    <string name="error_message_unknown">We are having issues. Please try again later.</string>
+</resources>
