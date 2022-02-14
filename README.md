@@ -58,6 +58,15 @@ Instrumentation tests:
 
 ### Added Dependencies
 
+#### Circular Progress Bar
+
+[CircularProgressBar](https://github.com/lopspower/CircularProgressBar) was preferred over stock
+Android constructs to utilise its color gradient support & avoid reinventing a custom solution.
+
+Used for displaying credit score as a circular bar.
+
+Also used to indicate progress while credit score is loading.
+
 #### Jetpack Navigation Component
 
 Used for navigating to fragment destinations, as a modern way to offload UI off `Activity` while
@@ -78,12 +87,6 @@ Used for networking stack (based on OkHttp client).
 #### Koin
 
 Used for Dependency Injection.
-
-#### Circular Progress Bar
-
-Used for displaying credit score as a circular bar.
-
-Also used to indicate progress while credit score is loading.
 
 #### MockK
 
